@@ -7,10 +7,10 @@
             Data = data;
             Errors = errors;
         }
-        
+
         public ResultViewModel(T data)
         {
-            Data =data;
+            Data = data;
         }
 
         public ResultViewModel(List<string> errors)
