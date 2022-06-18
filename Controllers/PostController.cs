@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Blog.Controllers
 {
     [ApiController]
-    public class PostController :ControllerBase
+    public class PostController : ControllerBase
     {
         [HttpGet("v1/posts")]
         public async Task<IActionResult> GetAsync(
@@ -120,4 +120,5 @@ namespace Blog.Controllers
                 return StatusCode(500, new ResultViewModel<List<Post>>("05X04 - Falha interna no servidor"));
             }
         }
+    }
 }
